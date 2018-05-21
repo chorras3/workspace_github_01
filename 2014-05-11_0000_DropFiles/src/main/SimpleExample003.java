@@ -50,7 +50,9 @@ public class SimpleExample003 extends JFrame {
                             	fileAction.setDestination(strDestination);
                             	//--
                             	arrActions.add (fileAction);
-                            	ejecutar(fileAction);
+                            	boolean execOk = ejecutar(fileAction);
+                            	System.out.println("execOk="+execOk);
+                            	
                             }   // end try
                             catch( java.io.IOException e ) {}
                         }   // end for: through each dropped file
@@ -154,7 +156,9 @@ public class SimpleExample003 extends JFrame {
     }
     
     
-    public static void ejecutar (FileAction fileAction){
+    public static boolean ejecutar (FileAction fileAction){
+    	boolean resultOk = true;
+    	
     	String strDestinationOk = fileAction.getDestination()+ "\\Nuevo documento de texto.txt";
     	
     	String strCommand = "move " + fileAction.getSource() + " " + strDestinationOk;
@@ -177,9 +181,11 @@ public class SimpleExample003 extends JFrame {
                 System.out.println(Error);
             }
         } catch (Exception e) {
+        	 resultOk = false;
             e.printStackTrace();
-        }     
-    	
+        }
+        
+        return resultOk;
     }
     
 } // End of class

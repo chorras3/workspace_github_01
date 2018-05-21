@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+<script>
+$(document).ready(function(){
+  $("input").blur(function(){
+    var msg ="Hello "; 
+    var x = $("input").val();
+   $("span#id1").html(msg+x);
+  });
+});
+</script>
+</head>
+<body>
+
+<input type="text">
+<br />
+<span id ="id1">Enter Your name</span> <br />
+</body>
+</html>
+

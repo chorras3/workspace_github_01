@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+ <script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+<script>
+
+$(document).ready(function(){
+     $("#parent").click(function(){
+    $(this).find("tr").css("background-color", "gainsboro");
+
+    });
+    });
+ </script>
+<body>
+
+<h1>List of Cars </h1>
+
+<table id ="parent" border=1 >
+     <tr>
+      <td>Make</td>
+      <td>Model</td>
+    </tr>
+    <tr>
+      <td>Toyota</td>
+      <td>Corolla</td>
+    </tr>
+    <tr>
+      <td>Honda </td>
+      <td>Civic</td>
+    </tr>
+    <tr>
+      <td>Ford </td>
+      <td>Focus</td>
+    </tr>
+</table>
+
+</body>
+</html>

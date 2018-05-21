@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+<script type="text/javascript">
+	var i = 0;
+	jQuery(document).ready(function(e) {
+		$('#btcopy').click(function(e) {
+			i++;
+			var clone = $('.root:last').clone();
+			clone.html(clone.html()+" "+(i));
+			clone.appendTo($('#container'));
+        		});
+	});
+</script>
+<title>Example 04</title>
+</head>
+
+<body>
+    <input id='btcopy' type='button' value='make copy at first'/>
+    <div id="container"></div>
+    <div class="root">Content</div>
+</body>
+</html>

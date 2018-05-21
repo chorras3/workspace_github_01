@@ -1,0 +1,3 @@
+This classes are deprecated, task continues on this package and class:
+
+F:\User\workspace_eclipse\Juno_usb_F\2014-06-19_2326_GeneralTests\src\tmp_borrable\Main.java

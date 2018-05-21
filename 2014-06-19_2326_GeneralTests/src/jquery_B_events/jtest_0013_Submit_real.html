@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+</head>
+<body>
+<p>What is 4 + 9 ? </p>
+<form action="javascript:alert('success!');">
+<div>
+<input type="text" />
+<input type="submit" />
+</div>
+</form>
+<span> Enter Sum and press Submit</span>
+<script>
+$("form").submit(function() {
+if ($("input:first").val() == "13") {
+$("span").text("You are correct...").show();
+return true;
+}
+$("span").text("Incorrect ! Please try again").show().fadeOut(2000);
+return false;
+});
+</script>
+</body>
+</html>

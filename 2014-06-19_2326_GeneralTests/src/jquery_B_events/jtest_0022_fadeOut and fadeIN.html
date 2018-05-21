@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+<script>
+$(document).ready(function(){
+var rand1 = Math.round(Math.random()*8+1);
+$("input#id2").val(rand1);
+
+var rand2 = Math.round(Math.random()*8+1);
+$("input#id3").val(rand2);
+
+  $("input#id4").keyup(function(){
+    var x = $("input#id4").val();
+    var y = Number($("input#id2").val()) + Number($("input#id3").val());
+   if ( y == Number($("input#id4").val())) {var msg ="Correct";
+   $("span#id5").html(msg );
+      $("span#id5").fadeOut(2000);      
+     }
+   else {var msg ="InCorrect";
+$("span#id5").html(msg);
+   }
+
+  });
+});
+</script>
+</head>
+<body>
+
+<input id ="id2" type="text" value ="Generate"  style="border: none" readonly>
+<br />
++<input id ="id3" type="text" value ="Generate"  style="border: none" readonly>
+<br />
+----<br />
+<input  id="id4" type="text" style="border: none">
+<br />
+----<br />
+<span id ="id5">Enter Result</span> <br />
+
+</body>
+</html>

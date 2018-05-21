@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+<!--
+Referencedesigner.com jQuery Tutorial showing usage of .get() without index
+-->
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    var x = [];   
+    x=$("p").get(); // without a parameter get() returns an array
+  
+    $("div").text(x[0].innerHTML + x[1].innerHTML);
+  });
+});
+</script>
+</head>
+<body>
+<p>This is a Line 1</p>
+<p>This is a Line 2</p>
+<p>This is a Line 3</p>
+<button>Click me to see action </button>
+<div></div>
+</body>
+</html>

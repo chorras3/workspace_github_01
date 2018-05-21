@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+</head>
+<div id="id1">
+Point Mouse here, or remove it from here and see action. 
+</div>
+<script>
+
+$('#id1').mousemove(function(event) {
+  var msg = "Mouse is at " + event.pageX + ", " + event.pageY; 
+ $("div#id1").text(msg);
+});
+
+</script>
+</body>
+</html>

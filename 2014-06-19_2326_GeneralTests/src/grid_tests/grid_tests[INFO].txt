@@ -1,0 +1,12 @@
+-Downloaded from:
+(Choosed Product: "grid" standard free version):
+https://dhtmlx.com/
+
+
+-Zip folder (uncompressed):
+F:\User\workspace_eclipse\Juno_usb_F\_Misc\library\dhtmlxGrid_v50_std.zip_\
+
+
+-Examples, 
+**Grid examples: 
+  * F:\User\workspace_eclipse\Juno_usb_F\_Misc\library\dhtmlxGrid_v50_std.zip_\samples\dhtmlxGrid\16_rows_columns_manipulations\01_addrows_grid.html

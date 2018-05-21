@@ -1,0 +1,3 @@
+http://jsfiddle.net/vVmcC/4/
+
+Contiene un ejemplo de arbol AST pero que reparte los anchos del padre entre cada nodo hijo.	 

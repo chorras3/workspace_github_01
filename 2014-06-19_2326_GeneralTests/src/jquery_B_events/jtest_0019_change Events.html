@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+<script>
+$(document).ready(function(){
+  $("input").change(function(){
+    $("span").text("Form Field change event fired"); 
+  });
+});
+</script>
+</head>
+<body>
+
+<input type="text">
+<br />
+<input type="radio">
+<br /><br />
+<span>Write some text in the input field, and then press enter or click outside the field</span> 
+<br />
+<p>Or click the radio button</p>
+</body>
+</html>

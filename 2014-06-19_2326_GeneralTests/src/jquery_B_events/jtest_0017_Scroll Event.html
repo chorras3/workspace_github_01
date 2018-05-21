@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+</script>
+<script>
+scrollcount=0;
+$(document).ready(function(){
+  $("div").scroll(function(){
+    $("span").text(scrollcount+=1);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Try the scrollbar in the div</p>
+<div style="border:1px solid black;width:250px;height:150px;overflow:scroll;">The jQuert tutorial showing the effect of the scroll. Every time you scroll, the count increases. 
+<br><br>
+While doing anything you should watch your mind. This brings meditative quality to you mind. Just by watching you are able to master your mind. You are no more slave</div>
+<p>Scroll Count :<span>0</span> </p>
+
+</body>
+</html>

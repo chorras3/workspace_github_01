@@ -1,0 +1,11 @@
+Info
+=====
+
+-Tutorial:
+**"Query 1.8 Released", "Posted on August 9, 2012 by Dave Methvin", https://blog.jquery.com/2012/08/09/jquery-1-8-released/
+
+
+-Jquery import (not minified):
+
+<!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+<script type="text/javascript" src="jquery-1.8.0.js"></script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+</head>
+<div id="id1">
+Point Mouse here, keep pressed and the release after some time. 
+</div>
+
+<script>
+$('#id1').mousedown(function() {
+ $("div#id1").text("You pressed mouse down");
+});
+
+$('#id1').mouseup(function() {
+ $("div#id1").text("You released Mouse");
+});
+
+</script>
+</body>
+</html>

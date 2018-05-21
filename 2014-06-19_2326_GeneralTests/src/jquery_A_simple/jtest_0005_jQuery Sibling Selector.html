@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+<script type="text/javascript" src="jquery-1.8.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("table+a").hide();
+  });
+});
+</script>
+</head>
+ 
+<body>
+<h2>Reference Designer jQuery Tutorial</h2>
+ 
+<p> Table #1 </p>
+<table border = 1">
+<tr> <td> 1</td>
+     <td> 2</td>
+</tr>
+<tr> <td> 3</td>
+     <td> 4</td>
+</tr>
+</table>
+ 
+<a href ="http://referencedesigner.com"> Reference Designer Link #1 </a>
+ 
+<p> Table #2 </p>
+<table border = 1">
+<tr> <td> 1</td>
+     <td> 2</td>
+</tr>
+<tr> <td> 3</td>
+     <td> 4</td>
+</tr>
+</table>
+<a href ="http://referencedesigner.com"> Reference Designer Link #2 </a>
+<p> some other text </p>
+<a href ="http://referencedesigner.com"> Reference Designer Link #3 </a>
+<br />
+<button>Click me and Reference Designer Link #1 and #2 will vanish</button>
+ 
+</body>
+</html>

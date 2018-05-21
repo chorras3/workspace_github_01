@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://fiddle.jshell.net/_display/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="./jquery-1.4.4.min.js.descarga"></script>
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    #mainContainer{
+    background:Red;
+    min-width:850px;
+}
+.container{
+    text-align:center;
+    margin:10px .5%;
+    padding:10px .5%;
+    background:green;
+    float:left;
+    overflow:visible;
+    position:relative;
+}
+
+
+.member{
+    background:#eee;   
+    position:relative;
+    z-index:   1;
+    cursor:default;
+    border-bottom:solid 1px #000;
+}
+.member:after{
+    display:block;
+    position:absolute;
+    left:50%;
+    width:1px; 
+    height:20px;
+    background:#000;
+    content:" ";
+    bottom:100%;
+}
+.member:hover{
+ z-index:   2;
+}
+.member .metaInfo{
+    display:none;
+    border:solid 1px #000;
+    background:#fff;
+    position:absolute;
+    bottom:100%;
+    left:50%;
+    padding:5px;
+    width:100px;
+}
+.member:hover .metaInfo{
+    display:block;   
+}
+.member .metaInfo img{
+  width:50px;
+  height:50px; 
+  display:inline-block; 
+  padding:5px;
+  margin-right:5px;
+    vertical-align:top;
+  border:solid 1px #aaa;
+}
+  </style>
+
+  <title></title>
+
+  
+    
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+var members = [
+    {memberId : 1, parentId:null, amount:201, otherInfo:"blah"},
+    {memberId : 2, parentId:1, amount:300, otherInfo:"blah1"},
+    {memberId : 3, parentId:1, amount:400, otherInfo:"blah2"},
+    {memberId : 4, parentId:3, amount:500, otherInfo:"blah3"},
+    {memberId : 6, parentId:1, amount:600, otherInfo:"blah4"},
+    {memberId : 9, parentId:4, amount:700, otherInfo:"blah5"},
+    {memberId : 12, parentId:2, amount:800, otherInfo:"blah6"},
+    {memberId : 5, parentId:2, amount:900, otherInfo:"blah7"},
+    {memberId : 13, parentId:2, amount:0, otherInfo:"blah8"},
+    {memberId : 14, parentId:2, amount:800, otherInfo:"blah9"},
+    {memberId : 55, parentId:2, amount:250, otherInfo:"blah10"},
+    {memberId : 56, parentId:3, amount:10, otherInfo:"blah11"},
+    {memberId : 57, parentId:3, amount:990, otherInfo:"blah12"},
+    {memberId : 58, parentId:3, amount:400, otherInfo:"blah13"},
+    {memberId : 59, parentId:6, amount:123, otherInfo:"blah14"},
+    {memberId : 54, parentId:6, amount:321, otherInfo:"blah15"},
+    {memberId : 53, parentId:56, amount:10000, otherInfo:"blah7"},
+    {memberId : 52, parentId:2, amount:47, otherInfo:"blah17"},
+    {memberId : 51, parentId:6, amount:534, otherInfo:"blah18"},
+    {memberId : 5000, parentId:9, amount:55943, otherInfo:"blah19"},
+    {memberId : 22, parentId:9, amount:2, otherInfo:"blah27"},
+    {memberId : 33, parentId:12, amount:-10, otherInfo:"blah677"}
+    
+];
+var testImgSrc = "http://0.gravatar.com/avatar/06005cd2700c136d09e71838645d36ff?s=69&d=wavatar";
+(function heya( parentId ){
+    // This is slow and iterates over each object everytime.
+    // Removing each item from the array before re-iterating 
+    // may be faster for large datasets.
+    for(var i = 0; i < members.length; i++){
+        var member = members[i];
+        if(member.parentId === parentId){
+            var parent = parentId ? $("#containerFor" + parentId) : $("#mainContainer"),
+                memberId = member.memberId,
+                    metaInfo = "<img src='"+testImgSrc+"'/>" + member.otherInfo + " ($" + member.amount + ")";
+            parent.append("<div class='container' id='containerFor" + memberId + "'><div class='member'>" + memberId + "<div class='metaInfo'>" + metaInfo + "</div></div></div>");
+            heya(memberId);
+        } 
+    }
+ }( null ));
+
+// makes it pretty:
+// recursivley resizes all children to fit within the parent.
+var pretty = function(){
+    var self = $(this),
+        children = self.children(".container"),
+        // subtract 4% for margin/padding/borders.
+        width = (100/children.length) - 2;
+    children
+        .css("width", width + "%")
+        .each(pretty);
+    
+};
+$("#mainContainer").each(pretty);
+    
+});//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  <div id="mainContainer" class="clearfix"><div class="container" id="containerFor1" style="width: 98%;"><div class="member">1<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah ($201)</div></div><div class="container" id="containerFor2" style="width: 31.3333%;"><div class="member">2<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah1 ($300)</div></div><div class="container" id="containerFor12" style="width: 14.6667%;"><div class="member">12<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah6 ($800)</div></div><div class="container" id="containerFor33" style="width: 98%;"><div class="member">33<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah677 ($-10)</div></div></div></div><div class="container" id="containerFor5" style="width: 14.6667%;"><div class="member">5<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah7 ($900)</div></div></div><div class="container" id="containerFor13" style="width: 14.6667%;"><div class="member">13<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah8 ($0)</div></div></div><div class="container" id="containerFor14" style="width: 14.6667%;"><div class="member">14<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah9 ($800)</div></div></div><div class="container" id="containerFor55" style="width: 14.6667%;"><div class="member">55<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah10 ($250)</div></div></div><div class="container" id="containerFor52" style="width: 14.6667%;"><div class="member">52<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah17 ($47)</div></div></div></div><div class="container" id="containerFor3" style="width: 31.3333%;"><div class="member">3<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah2 ($400)</div></div><div class="container" id="containerFor4" style="width: 23%;"><div class="member">4<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah3 ($500)</div></div><div class="container" id="containerFor9" style="width: 98%;"><div class="member">9<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah5 ($700)</div></div><div class="container" id="containerFor5000" style="width: 48%;"><div class="member">5000<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah19 ($55943)</div></div></div><div class="container" id="containerFor22" style="width: 48%;"><div class="member">22<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah27 ($2)</div></div></div></div></div><div class="container" id="containerFor56" style="width: 23%;"><div class="member">56<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah11 ($10)</div></div><div class="container" id="containerFor53" style="width: 98%;"><div class="member">53<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah7 ($10000)</div></div></div></div><div class="container" id="containerFor57" style="width: 23%;"><div class="member">57<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah12 ($990)</div></div></div><div class="container" id="containerFor58" style="width: 23%;"><div class="member">58<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah13 ($400)</div></div></div></div><div class="container" id="containerFor6" style="width: 31.3333%;"><div class="member">6<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah4 ($600)</div></div><div class="container" id="containerFor59" style="width: 31.3333%;"><div class="member">59<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah14 ($123)</div></div></div><div class="container" id="containerFor54" style="width: 31.3333%;"><div class="member">54<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah15 ($321)</div></div></div><div class="container" id="containerFor51" style="width: 31.3333%;"><div class="member">51<div class="metaInfo"><img src="./06005cd2700c136d09e71838645d36ff">blah18 ($534)</div></div></div></div></div></div>
+  
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+
+
+
+
+</body></html>

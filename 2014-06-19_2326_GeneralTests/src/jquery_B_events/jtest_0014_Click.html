@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script type="text/javascript" src="jquery-1.8.0.min.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.0.js"></script>  
+</head>
+<div id="id1">
+id 1 text
+</div>
+
+<div id="id2">
+id 2 text
+</div>
+<script>
+$('#id1').click(function() {
+ $("div#id1").text("You Clicked first Line");
+});
+
+$('#id2').click(function() {
+ $("div#id2").text("You Clicked Second Line");
+});
+
+</script>
+</body>
+</html>

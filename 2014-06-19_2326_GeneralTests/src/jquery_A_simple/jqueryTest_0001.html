@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+    <!-- jQuery libraries -->
+    <script type="text/javascript" src="${pageContext.request.contextPath}/core/static/js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+Body here.
+
+<div id="capa" style="padding: 10px; background-color: #ff8800">Haz clic en un botón</div>
+
+<input type="button" value="Botón A" onclick="$('#capa').html('Has hecho clic en el botón <b>A</b>')">
+
+<input type="button" value="Botón B" onclick="$('#capa').html('Recibido un clic en el botón <b>B</b>')">
+ 
+</body>
+</html>

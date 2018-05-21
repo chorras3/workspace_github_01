@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://jsfiddle.net/vVmcC/4/embedded/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="edit-Type" edit="text/html; charset=utf-8">
+
+    
+      <meta name="robots" content="index, follow">
+      <meta name="googlebot" content="index, follow">
+
+      <script async="" src="./analytics.js.descarga"></script><script type="text/javascript" src="./highlight.pack.js.descarga"></script>
+
+      <script type="text/javascript" src="./embed.js.descarga"></script>
+
+
+      
+        <link rel="stylesheet" type="text/css" href="./embed-light.css">
+
+      
+
+      <script type="text/javascript">
+        var height;
+        var force_height = null;
+        var slug = "vVmcC";
+        var show_src = "//fiddle.jshell.net/vVmcC/4/show/light/";
+        var resize_element_counter = 0;
+        var shell_edit_url = '/vVmcC/4/light/';
+
+        
+      </script>
+    
+
+    <link href="./css" rel="stylesheet" type="text/css">
+    <!-- <link href="//fonts.googleapis.com/css?family=Lato:400|Inconsolata" rel="stylesheet" type="text/css"> -->
+
+    <style type="text/css" media="screen">
+      
+      
+      
+      
+    </style>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      
+        <header>
+          <h1><a href="http://jsfiddle.net/vVmcC/4/?utm_source=website&amp;utm_medium=embed&amp;utm_campaign=vVmcC" target="_blank">Edit in JSFiddle</a></h1>
+          <!-- <h1><a href="/vVmcC/4/light/" target="_blank">Edit in JSFiddle</a></h1> -->
+          <div id="actions">
+            <ul class="normalRes">
+              
+                <li class="active">
+                  <a data-trigger-type="js" href="http://jsfiddle.net/vVmcC/4/embedded/#JavaScript">JavaScript</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="html" href="http://jsfiddle.net/vVmcC/4/embedded/#HTML">HTML</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="css" href="http://jsfiddle.net/vVmcC/4/embedded/#CSS">CSS</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="result" href="http://jsfiddle.net/vVmcC/4/embedded/#Result">Result</a>
+                </li>
+              
+            </ul>
+            <div class="hl" style="left: 0px; width: 81.0938px;"></div>
+          </div>
+        </header>
+
+        <div id="tabs">
+          
+            
+              
+                <pre class="tCont  active hljs javascript"><span class="hljs-keyword">var</span> members = [
+    {memberId : <span class="hljs-number">1</span>, parentId:<span class="hljs-literal">null</span>, amount:<span class="hljs-number">200</span>, otherInfo:<span class="hljs-string">"blah"</span>},
+    {memberId : <span class="hljs-number">2</span>, parentId:<span class="hljs-number">1</span>, amount:<span class="hljs-number">300</span>, otherInfo:<span class="hljs-string">"blah1"</span>},
+    {memberId : <span class="hljs-number">3</span>, parentId:<span class="hljs-number">1</span>, amount:<span class="hljs-number">400</span>, otherInfo:<span class="hljs-string">"blah2"</span>},
+    {memberId : <span class="hljs-number">4</span>, parentId:<span class="hljs-number">3</span>, amount:<span class="hljs-number">500</span>, otherInfo:<span class="hljs-string">"blah3"</span>},
+    {memberId : <span class="hljs-number">6</span>, parentId:<span class="hljs-number">1</span>, amount:<span class="hljs-number">600</span>, otherInfo:<span class="hljs-string">"blah4"</span>},
+    {memberId : <span class="hljs-number">9</span>, parentId:<span class="hljs-number">4</span>, amount:<span class="hljs-number">700</span>, otherInfo:<span class="hljs-string">"blah5"</span>},
+    {memberId : <span class="hljs-number">12</span>, parentId:<span class="hljs-number">2</span>, amount:<span class="hljs-number">800</span>, otherInfo:<span class="hljs-string">"blah6"</span>},
+    {memberId : <span class="hljs-number">5</span>, parentId:<span class="hljs-number">2</span>, amount:<span class="hljs-number">900</span>, otherInfo:<span class="hljs-string">"blah7"</span>},
+    {memberId : <span class="hljs-number">13</span>, parentId:<span class="hljs-number">2</span>, amount:<span class="hljs-number">0</span>, otherInfo:<span class="hljs-string">"blah8"</span>},
+    {memberId : <span class="hljs-number">14</span>, parentId:<span class="hljs-number">2</span>, amount:<span class="hljs-number">800</span>, otherInfo:<span class="hljs-string">"blah9"</span>},
+    {memberId : <span class="hljs-number">55</span>, parentId:<span class="hljs-number">2</span>, amount:<span class="hljs-number">250</span>, otherInfo:<span class="hljs-string">"blah10"</span>},
+    {memberId : <span class="hljs-number">56</span>, parentId:<span class="hljs-number">3</span>, amount:<span class="hljs-number">10</span>, otherInfo:<span class="hljs-string">"blah11"</span>},
+    {memberId : <span class="hljs-number">57</span>, parentId:<span class="hljs-number">3</span>, amount:<span class="hljs-number">990</span>, otherInfo:<span class="hljs-string">"blah12"</span>},
+    {memberId : <span class="hljs-number">58</span>, parentId:<span class="hljs-number">3</span>, amount:<span class="hljs-number">400</span>, otherInfo:<span class="hljs-string">"blah13"</span>},
+    {memberId : <span class="hljs-number">59</span>, parentId:<span class="hljs-number">6</span>, amount:<span class="hljs-number">123</span>, otherInfo:<span class="hljs-string">"blah14"</span>},
+    {memberId : <span class="hljs-number">54</span>, parentId:<span class="hljs-number">6</span>, amount:<span class="hljs-number">321</span>, otherInfo:<span class="hljs-string">"blah15"</span>},
+    {memberId : <span class="hljs-number">53</span>, parentId:<span class="hljs-number">56</span>, amount:<span class="hljs-number">10000</span>, otherInfo:<span class="hljs-string">"blah7"</span>},
+    {memberId : <span class="hljs-number">52</span>, parentId:<span class="hljs-number">2</span>, amount:<span class="hljs-number">47</span>, otherInfo:<span class="hljs-string">"blah17"</span>},
+    {memberId : <span class="hljs-number">51</span>, parentId:<span class="hljs-number">6</span>, amount:<span class="hljs-number">534</span>, otherInfo:<span class="hljs-string">"blah18"</span>},
+    {memberId : <span class="hljs-number">50</span>, parentId:<span class="hljs-number">9</span>, amount:<span class="hljs-number">55943</span>, otherInfo:<span class="hljs-string">"blah19"</span>},
+    {memberId : <span class="hljs-number">22</span>, parentId:<span class="hljs-number">9</span>, amount:<span class="hljs-number">2</span>, otherInfo:<span class="hljs-string">"blah27"</span>},
+    {memberId : <span class="hljs-number">33</span>, parentId:<span class="hljs-number">12</span>, amount:<span class="hljs-number">-10</span>, otherInfo:<span class="hljs-string">"blah677"</span>}
+    
+];
+<span class="hljs-keyword">var</span> testImgSrc = <span class="hljs-string">"http://0.gravatar.com/avatar/06005cd2700c136d09e71838645d36ff?s=69&amp;d=wavatar"</span>;
+(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">heya</span>(<span class="hljs-params"> parentId </span>)</span>{
+    <span class="hljs-comment">// This is slow and iterates over each object everytime.</span>
+    <span class="hljs-comment">// Removing each item from the array before re-iterating </span>
+    <span class="hljs-comment">// may be faster for large datasets.</span>
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; members.length; i++){
+        <span class="hljs-keyword">var</span> member = members[i];
+        <span class="hljs-keyword">if</span>(member.parentId === parentId){
+            <span class="hljs-keyword">var</span> parent = parentId ? $(<span class="hljs-string">"#containerFor"</span> + parentId) : $(<span class="hljs-string">"#mainContainer"</span>),
+                memberId = member.memberId,
+                    metaInfo = <span class="hljs-string">"&lt;img src='"</span>+testImgSrc+<span class="hljs-string">"'/&gt;"</span> + member.otherInfo + <span class="hljs-string">" ($"</span> + member.amount + <span class="hljs-string">")"</span>;
+            parent.append(<span class="hljs-string">"&lt;div class='container' id='containerFor"</span> + memberId + <span class="hljs-string">"'&gt;&lt;div class='member'&gt;"</span> + memberId + <span class="hljs-string">"&lt;div class='metaInfo'&gt;"</span> + metaInfo + <span class="hljs-string">"&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"</span>);
+            heya(memberId);
+        } 
+    }
+ }( <span class="hljs-literal">null</span> ));
+
+<span class="hljs-comment">// makes it pretty:</span>
+<span class="hljs-comment">// recursivley resizes all children to fit within the parent.</span>
+<span class="hljs-keyword">var</span> pretty = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> self = $(<span class="hljs-keyword">this</span>),
+        children = self.children(<span class="hljs-string">".container"</span>),
+        <span class="hljs-comment">// subtract 4% for margin/padding/borders.</span>
+        width = (<span class="hljs-number">100</span>/children.length) - <span class="hljs-number">2</span>;
+    children
+        .css(<span class="hljs-string">"width"</span>, width + <span class="hljs-string">"%"</span>)
+        .each(pretty);
+    
+};
+$(<span class="hljs-string">"#mainContainer"</span>).each(pretty);
+    </pre>
+              
+            
+          
+            
+              
+                <pre class="tCont hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"mainContainer"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"clearfix"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+              
+            
+          
+            
+              
+                <pre class="tCont hljs css"><span class="hljs-selector-id">#mainContainer</span>{
+    <span class="hljs-attribute">background</span>:Red;
+    <span class="hljs-attribute">min-width</span>:<span class="hljs-number">850px</span>;
+}
+<span class="hljs-selector-class">.container</span>{
+    <span class="hljs-attribute">text-align</span>:center;
+    <span class="hljs-attribute">margin</span>:<span class="hljs-number">10px</span> .<span class="hljs-number">5%</span>;
+    <span class="hljs-attribute">padding</span>:<span class="hljs-number">10px</span> .<span class="hljs-number">5%</span>;
+    <span class="hljs-attribute">background</span>:green;
+    <span class="hljs-attribute">float</span>:left;
+    <span class="hljs-attribute">overflow</span>:visible;
+    <span class="hljs-attribute">position</span>:relative;
+}
+
+
+<span class="hljs-selector-class">.member</span>{
+    <span class="hljs-attribute">background</span>:<span class="hljs-number">#eee</span>;   
+    <span class="hljs-attribute">position</span>:relative;
+    <span class="hljs-attribute">z-index</span>:   <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">cursor</span>:default;
+    <span class="hljs-attribute">border-bottom</span>:solid <span class="hljs-number">1px</span> <span class="hljs-number">#000</span>;
+}
+<span class="hljs-selector-class">.member</span><span class="hljs-selector-pseudo">:after</span>{
+    <span class="hljs-attribute">display</span>:block;
+    <span class="hljs-attribute">position</span>:absolute;
+    <span class="hljs-attribute">left</span>:<span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">width</span>:<span class="hljs-number">1px</span>; 
+    <span class="hljs-attribute">height</span>:<span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">background</span>:<span class="hljs-number">#000</span>;
+    <span class="hljs-attribute">content</span>:<span class="hljs-string">" "</span>;
+    <span class="hljs-attribute">bottom</span>:<span class="hljs-number">100%</span>;
+}
+<span class="hljs-selector-class">.member</span><span class="hljs-selector-pseudo">:hover</span>{
+ <span class="hljs-attribute">z-index</span>:   <span class="hljs-number">2</span>;
+}
+<span class="hljs-selector-class">.member</span> <span class="hljs-selector-class">.metaInfo</span>{
+    <span class="hljs-attribute">display</span>:none;
+    <span class="hljs-attribute">border</span>:solid <span class="hljs-number">1px</span> <span class="hljs-number">#000</span>;
+    <span class="hljs-attribute">background</span>:<span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">position</span>:absolute;
+    <span class="hljs-attribute">bottom</span>:<span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">left</span>:<span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">padding</span>:<span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">width</span>:<span class="hljs-number">100px</span>;
+}
+<span class="hljs-selector-class">.member</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.metaInfo</span>{
+    <span class="hljs-attribute">display</span>:block;   
+}
+<span class="hljs-selector-class">.member</span> <span class="hljs-selector-class">.metaInfo</span> <span class="hljs-selector-tag">img</span>{
+  <span class="hljs-attribute">width</span>:<span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">height</span>:<span class="hljs-number">50px</span>; 
+  <span class="hljs-attribute">display</span>:inline-block; 
+  <span class="hljs-attribute">padding</span>:<span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">margin-right</span>:<span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">vertical-align</span>:top;
+  <span class="hljs-attribute">border</span>:solid <span class="hljs-number">1px</span> <span class="hljs-number">#aaa</span>;
+}</pre>
+              
+            
+          
+            <div class="tCont result" id="result"></div>
+              
+            
+          
+        </div>
+      
+    </div>
+
+    
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
+  if (window.localStorage) {
+    ga('create', 'UA-366077-19', {
+      'storage': 'none',
+      'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
+    });
+    ga(function(tracker) {
+      localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
+    });
+    ga('send', 'pageview', '/[fiddle]/[revision]/embedded/'); // where `url_structure` is for example `/[user]/[fiddle]/[revision]/embedded/js,css/`
+  }
+</script>
+
+      
+    
+
+  
+
+</body></html>

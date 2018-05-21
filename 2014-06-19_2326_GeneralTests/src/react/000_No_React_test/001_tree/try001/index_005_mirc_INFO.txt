@@ -1,0 +1,82 @@
+INFO, code from nick micronn, on channel #programacion
+
+
+[date_16-04-2016]
+
+17:56                      Hidden12 ¦ hola
+17:58                      Hidden12 ¦ aquí tengo un ejemplo de cómo dibujar un arbol vertical, con JavaScript y CSS, me podéis ayudar a descargar el fuente? es que viene separado en 4 partes y no sé cómo juntarlo: 12http://jsfiddle.net/vVmcC/4/
+17:58                      Hidden12 ¦ es un ejemplo free
+17:59                      Hidden12 ¦ he probado metiendo el recuadro con CSS en el propio HTML pero no se visualiza
+17:59                      Hidden12 ¦ o igual es la función JavaScript la que me falla
+18:00                      Hidden12 ¦ o que lo estoy insertando mal en mi index.htm
+18:02                      Hidden12 ¦ 4[netman4] puedes ayudarme?
+18:12 15,15:                    12------> 12¦14 |ChErOkY| 12[14NZT4812@14nil.illegitimi.carborundum12]14 entra
+18:12 15,15?                         12=> 12¦14 CHaN pone modo 12[14+o |ChErOkY| 12]
+18:12             12@02|ChErOkY|12 ¦ Hi
+18:12                      Hidden12 ¦ hola |ChErOkY|
+18:12                      Hidden12 ¦ tu sabes JavaScript?
+18:12             12@02|ChErOkY|12 ¦ Hola Hidden
+18:12             12@02|ChErOkY|12 ¦ Nop
+18:14 15,15:               12@02micronn12 ¦ piensa que no es javascript a pelo, sino que requiere jquery
+18:16                      Hidden12 ¦ pero aun así, no sé cómo ponérmelo para que ese ejemplo me funcione en mi disco
+18:16                      Hidden12 ¦ a partir de ahí experimentaría, pues quiero hacer un compilador
+18:16                      Hidden12 ¦ con árboles AST, es decir como aspecto como el de ese ejemplo
+18:17                      Hidden12 ¦ es ideal puesto que usa datos en JSON
+18:17                      Hidden12 ¦ fáciles de tocar
+18:17                      Hidden12 ¦ tu sabes como trasladar ese ejemplo, micronn, a tu disco duro?
+18:18                      Hidden12 ¦ y que funcione con el IE?
+18:18                      Hidden12 ¦ el ejemplo funciona con todos los navegadores, me da igual el IE u otro
+18:20                      Hidden12 ¦ me da rabia porque el ejemplo está ahí, pero no sé cómo descargarlo
+18:20                      Hidden12 ¦ llevo meses buscando algo así
+18:20                      Hidden12 ¦ justo como eso
+18:21 15,15:               12@02micronn12 ¦ dejando de lado lo del compilador, que me descoloca un poco (no veo por qué deberías usar precisamente este ejemplo que trata de representar el árbol), si lo quieres todo en un mismo fichero, se trata de crear la estructura completa en html, con su <html ...><head>... los estilos los pones dentro de un <style type="text/css"> y el script dentro de un <script type="text/javascript">, no sin haber incluido antes una referencia a jque
+18:21 15,15:               12@02micronn12 ¦ ry <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+18:21 15,15:               12@02micronn12 ¦ dentro del body iría este <div id="mainContainer" class="clearfix"></div>
+18:22                      Hidden12 ¦ bueno lo de todo en un fichero es solo por no complicarme, seguramente lo mejor es css aparte
+18:22 15,15:               12@02micronn12 ¦ y los scripts a parte
+18:22                      Hidden12 ¦ bueno eso son costumbres, yo suelo meter los scripts juntos, aunque me da igual
+18:22 15,15:               12@02micronn12 ¦ pero vamos, si es todo en un fichero lo que debes tener en cuenta en este caso es poner el script justo antes del </body>
+18:24 15,15:               12@02micronn12 ¦ o eso, o encerrar la llamada a la función dentro de $(function() { .... }); para que la llame cuando el dom esté cargado
+18:25                      Hidden12 ¦ me pega casque el js
+18:26 15,15:               12@02micronn12 ¦ ponlo en un pastebin, por ejemplo
+18:26 15,15:               12@02micronn12 ¦ a ver qué has hecho
+18:27                      Hidden12 ¦ ok
+18:28                      Hidden12 ¦ https://pastebin.com/gV6jzzLV
+18:28                      Hidden12 ¦ hace mucho que no toco JS, seguro que meto la pata por todos lados
+18:28                      Hidden12 ¦ ese ejemplo me es muy util porque se basa en datos JSON, eso me interesa una barbaridad
+18:29 15,15:               12@02micronn12 ¦ no has hecho lo que te he comentado, de poner el script justo antes del </body>
+18:29 15,15:                    04<------ 12¦14 Zebra_Especial_ 04[144mc18z9x04@14A0ltMN.CbdXRx.virtual04]14 cierra 04[Signed off 04]
+18:31                      Hidden12 ¦ ah, la de cierre
+18:33 15,15:               12@02micronn12 ¦ https://pastebin.com/isr5LMgb
+18:34                      Hidden12 ¦ me sale el arbol pero con texto arriba
+18:35                      Hidden12 ¦ genial!
+18:35                      Hidden12 ¦ tu pastebin si me lo muestra perfecto
+18:36                      Hidden12 ¦ muchísimas gracias micronn
+18:36 15,15:               12@02micronn12 ¦ en tu paste no has comentado bien: <!-- <script type="text/javascript"> --> // ... // ... <!-- </script> --> así solo comentas la etiqueta del script
+18:36 15,15:               12@02micronn12 ¦ para comentar todo sería <!-- <script..... // .. // ... </script> -->
+18:36                      Hidden12 ¦ ajá, ya te dije que estoy oxidadísimo
+18:36 15,15:               12@02micronn12 ¦ probablemente por eso te sale el texto adicional
+18:36                      Hidden12 ¦ seguramente. Estoy ahora más a temas Java y estoy torpísimo
+18:37                      Hidden12 ¦ ya ni veía
+Session Close: Sun Apr 16 18:37:11 2017
+
+Session Start: Sun Apr 16 18:37:38 2017
+Session Ident: #programacion
+18:37 12=> 01Entrando en #programacion
+12=> Nicks: Hidden @|ChErOkY| Racy Brandon coyot3_ J_Vicente angelluis kaotiko sung_ tHe-LyRiK Hrafn @janio subzero @GriYo @Marvin @Dreg @micronn Pryan RanaRasa Chappie GertY-3000 netman @invitado-056651
+18:37 
+18:37  12 _ _[ #programacion 12]------------------------------o
+18:37 12 |14 Topic: El libro del año según pedropp http://rclibros.es/producto/docker-guia-practica/
+18:37 12 |14 Puesto por: CHaN : Thu Apr 13 23:40:42 2017
+18:37 12 |14 Modos: +Ccnrt
+18:37 12 |14 Usuarios: 23
+18:37 12 |-------[14 +o: 12lllllll14llllllllllllllllll 7 14(30.414%)
+18:37  12 ¯°--------------------------------------------------------------------------------o
+18:37 12=> 14 IRCops15,15?14: 12l14llllllllllllllllllllllll 1 14(4.314%) 14Marvin
+18:38                      Hidden12 ¦ no sabes cómo te lo agradezco micronn
+18:38 15,15:               12@02micronn12 ¦ ;)
+18:38                      Hidden12 ¦ un abrazo, y hasta pronto, un saludo a todos
+18:39 15,15:                    12------> 12¦14 megafauna 12[14megafauna12@14CShyLz.CMeoAB.virtual12]14 entra
+18:39 15,15:               12@02micronn12 ¦ que vaya bien
+18:39 15,15:               12@02micronn12 ¦ hola, megafauna
+18:39               1202megafauna12 ¦ hola!

@@ -1,0 +1,27 @@
+
+
+
+Se han añadido enlaces a código externo:
+
+
+Botón secundario sobre proyecto, seleccionar Properties. En la pantalla que sale: 
+"Java Build Path", Pestaña "Source". Botón "Link Source"  (o Link Source Folder)
+
+Folder Location:
+Se indica la ruta:
+F:\User\ToBackup\workspace_eclipse\Juno_usb_F\JCoder_20140515_1155\src
+
+
+Folder name:
+Poner un nombre cualquiera, lógico es que sea el de la carpeta del proyecto:
+JCoder_20140515_1155
+
+
+
+
+
+
+
+Conversor de millisegundos a Date, y viceversa, usé:
+http://www.ruddwire.com/handy-code/date-to-millisecond-calculators/#.U6NaLVOKBaQ
+<<<<<<<<<<<<<<<<<<<http://www.fileformat.info/tip/java/date2millis.htm

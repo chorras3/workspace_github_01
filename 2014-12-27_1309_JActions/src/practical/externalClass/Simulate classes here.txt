@@ -1,0 +1,3 @@
+Simulate classes here: To avoid compilation errors, but still being usable by examples on "practical" package. 
+
+-E.g. simplify method (to be used by examples on "practical" package), refactor packages paths, etc. 

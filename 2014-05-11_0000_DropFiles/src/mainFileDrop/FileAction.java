@@ -1,4 +1,4 @@
-package main;
+package mainFileDrop;
 
 public class FileAction {
 	protected  String action = "";

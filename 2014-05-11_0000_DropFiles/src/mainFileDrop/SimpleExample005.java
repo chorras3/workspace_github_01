@@ -1,4 +1,4 @@
-package main;
+package mainFileDrop;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

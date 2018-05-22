@@ -1,4 +1,4 @@
-package main;
+package dropTests;
 
 import jacBusiness.FileAction;
 
@@ -28,7 +28,7 @@ import core.file.FileTool;
 
 import net.iharder.dnd.FileDrop;
 
-public class SimpleExample006_B extends JFrame {
+public class SimpleExample006_a extends JFrame {
 	//--Constants START
 	final protected static String DATE_TO_USE="created";   // Values: "created"/"modified" E.g. with "modified" we call the folder as the last modification date
 	//--Constants END
@@ -36,7 +36,7 @@ public class SimpleExample006_B extends JFrame {
 	protected static JTextArea textArea;
     protected static ArrayList arrActions = new ArrayList();  // first column: action(copy/delete/etc), second column:source file, third column: destination file
 
-    public SimpleExample006_B() {
+    public SimpleExample006_a() {
     	getUi();
     }
     
@@ -48,7 +48,7 @@ public class SimpleExample006_B extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             ////@Override
             public void run() {
-                SimpleExample006_B ex = new SimpleExample006_B();
+                SimpleExample006_a ex = new SimpleExample006_a();
                 ex.setVisible(true);
                 
                 /*
@@ -209,70 +209,8 @@ public class SimpleExample006_B extends JFrame {
         
     	
     }
-    
-
-    
     // true=secure (copy+rename original)
     protected void clicked_butMoveToDatedFolder(boolean blnSecureCopy)  
-//	throws IOException
-{
-    	String strTextArea = textArea.getText();
-    	System.out.println("strTextArea="+strTextArea);
-    	
-//    	String strDateReversed = ( (FileAction)arrActions.get(0) ).getDestination();
-//    	System.out.println("strDateReversed="+strDateReversed);
-    	
-    	String strFileOrigin =  ((FileAction)arrActions.get(0)).getSource();
-    	File theFile = new File(strFileOrigin);
-    	String strDestinationFolder = getDestination(strFileOrigin, FileAction.ACTION_MOVE);
-
-
-    			
-    	
-    	
-    	for (int arrCurrentPosition = 0; arrCurrentPosition < arrActions.size(); arrCurrentPosition++) {
-    		FileAction fileActionCurrent = (FileAction)arrActions.get(arrCurrentPosition);
-    		
-//    		String strFolderDestination = fileActionCurrent.getSource().substring(0, fileActionCurrent.getSource().length()-4);
-//    		File filFolderDestination = new File(strFolderDestination);
-    		
-    		String strFolder = fileActionCurrent.getSource();
-    		String strFolderPlusEnding = fileActionCurrent.getSource().substring(0, fileActionCurrent.getSource().length()-4);;
-    		
-    		
-       		File strFileSource = new File(fileActionCurrent.getSource());
-//    		String strFileSourceParentFolder = strFileSource.getParent();
-    		File filFileSource = new File(fileActionCurrent.getSource());
-    		String strFileSourceParentFolder = filFileSource.getParent();
-    		String strFileSourceNameAndExtension = filFileSource.getName();
-    		String strReverseDate = getDestination(strFileOrigin, FileAction.ACTION_MOVE);
-    		String strTargetFolder = strFileSourceParentFolder + "\\" + strReverseDate;
-//    		strTargetFile = strTargetFolder
-    		
-    		System.out.println("strFileSourceNameAndExtension="+strFileSourceNameAndExtension);
-    		System.out.println("strTargetFolder="+strTargetFolder);
-    		
-//    		createFolder(strTargetFolder, blnSecureCopy);   		
-    		//boolean blnFolderCreated = filFolderDestination.mkdir();
-    		File filFolderDestination = new File(strTargetFolder);
-    		boolean blnFolderCreated = filFolderDestination.mkdir();
-
-//    		moveFile(strFolderSource, strFolderTarget, blnSecureCopy);
-    		
-    		String strTargetFile = filFolderDestination + "\\" + strFileSourceNameAndExtension;
-    		
-//    		boolean result = duplicateFile( strFileSource,  strTargetFile);
-    		boolean resCopy = duplicateFile(strFileOrigin, strTargetFile);
-    		
-    		boolean resRename = renameFile(strFileOrigin, strTargetFile);
-    	
-    	}
-
-}
-
-    
-    // true=secure (copy+rename original)
-    protected void clicked_butMoveToDatedFolder_OLD(boolean blnSecureCopy)  
 //    		throws IOException
     {  
     	
@@ -619,49 +557,8 @@ public class SimpleExample006_B extends JFrame {
 //    }
     
     
-    boolean createFolder (String fullFolderPath){
-    	boolean result = false;
-    	
-		File aFolder = new File(fullFolderPath);
-		boolean blnFolderCreated = aFolder.mkdir();
-    	
-    	return result;
-    }
 
-    
-    public boolean renameFile(String strFileOrigin, String strFileTarget){
-    	boolean result = false;
     	
-    	File aFile = new File(strFileOrigin);
-    	File bFile = new File(strFileTarget);
-    	
-//    	try {
-//			copyFile(aFile, bFile);
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-    	
-    	return result;
-    }    
-    
-    
-    public boolean duplicateFile(String strFileOrigin, String strFileTarget){
-    	boolean result = false;
-    	
-    	File aFile = new File(strFileOrigin);
-    	File bFile = new File(strFileTarget);
-    	
-    	try {
-			copyFile(aFile, bFile);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    	
-    	return result;
-    }
-    
     /*
      * -References:
      *    **"Move / Copy File Operations in Java", stackoverflow.com/questions/300559/move-copy-file-operations-in-java   (answered May 26 '09 at 7:28 Rigo Vides)

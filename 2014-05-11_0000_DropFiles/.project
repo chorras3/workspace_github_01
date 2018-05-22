@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>2014-05-11_0000_DropFiles</name>
+	<comment></comment>
+	<projects>
+		<project>JCoder_20140515_1155</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>JCoder_20140515_1155</name>
+			<type>2</type>
+			<location>F:/User/ToBackup/workspace_eclipse/Juno_usb_F/JCoder_20140515_1155/src</location>
+		</link>
+		<link>
+			<name>link</name>
+			<type>2</type>
+			<location>M:/User/ToBackup/WorkspaceEclipseJunoUsb/JCoder_20140515_1155/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

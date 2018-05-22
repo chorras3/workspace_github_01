@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>2014-06-19_2326_GeneralTests</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>JCoder_20140515_1155</name>
+			<type>2</type>
+			<location>H:/User/workspace_eclipse/Juno_usb_F/JCoder/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>
